@@ -1,3 +1,4 @@
+import java.util.Scanner;
 
 public class UBmi {
 
@@ -8,8 +9,14 @@ public class UBmi {
 	 * 
 	 */
 	public static void main(String[] args) {
-		//TODO
-
+		Scanner sc = new Scanner(System.in);
+		double hmotnost = 0, vyska = 0, bmi = 0;
+		System.out.println("Zadaj hmotnost[kg]: ");
+		hmotnost = sc.nextDouble();
+		System.out.println("Zadaj vyska[cm]: ");
+		vyska = sc.nextDouble();
+		vyska /= 100;
+		bmi = hmotnost / (vyska * vyska);
+		System.out.println("BMI: " + bmi);
 	}
-
 }
