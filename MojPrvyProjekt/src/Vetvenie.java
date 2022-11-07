@@ -33,6 +33,35 @@ public class Vetvenie {
 		}else {
 			System.out.println(5);
 		}
+		
+		int denVTyzdni = 200;
+		
+		switch(denVTyzdni) {
+		case 1:
+			System.out.println("Pondelok");
+			break;
+		case 2:
+			System.out.println("Utorok");
+			break;
+		case 3:
+			System.out.println("Streda");
+			break;
+		case 4:
+			System.out.println("Stvrtok");
+			break;
+		case 5:
+			System.out.println("Piatok");
+			break;
+		case 6:
+			System.out.println("Sobota");
+			break;
+		case 7:
+			System.out.println("Nedela");
+			break;
+		default:
+			System.out.println("Nespravny den v tyzdni!");
+		}
+		
 
 		System.out.println("Program pokracuje dalej ...");
 	}
